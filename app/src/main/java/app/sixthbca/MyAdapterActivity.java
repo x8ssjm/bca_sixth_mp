@@ -26,7 +26,6 @@ public class MyAdapterActivity extends AppCompatActivity {
             return insets;
         });
 
-        //spinner object banako
         Spinner comboBox = findViewById(R.id.spin);
         ArrayAdapter <CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.days, android.R.layout.simple_list_item_1);
 
