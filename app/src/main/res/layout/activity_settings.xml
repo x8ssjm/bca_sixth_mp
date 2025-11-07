@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg_white"
+    tools:context=".classui.SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_black"
+        android:paddingBottom="16dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+<!--        profile picture-->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pfp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/txt_grey"
+                android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr. John Doe"
+            android:textColor="@color/txt_black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+<!--        logout button-->
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_logout"
+            />
+
+    </LinearLayout>
+
+<!--    profile bhanda talako item haru-->
+    <!-- User Profile row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="14dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:text="User Profile"
+            android:textSize="15sp"
+            android:textColor="@color/txt_black" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/chevron_right" />
+    </LinearLayout>
+
+    <!-- Change Password row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="14dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/lock" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:text="Change Password"
+            android:textSize="15sp"
+            android:textColor="@color/txt_black" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/chevron_right" />
+    </LinearLayout>
+
+    <!-- FAQs row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="14dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/question_mark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:text="FAQs"
+            android:textSize="15sp"
+            android:textColor="@color/txt_black" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/chevron_right" />
+    </LinearLayout>
+
+<!--    push notification wala row-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="14dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/notification" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:text="Push Notification"
+            android:textSize="15sp"
+            android:textColor="@color/txt_black" />
+
+        <Switch
+            android:id="@+id/switchPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+<!--    whatsapp wala area-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/classui_round_rect_bg"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginHorizontal="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:text="If you have any other query you can reach out to us."
+            android:textColor="@color/txt_black"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whatsapp_us_underlined"
+            android:textColor="@color/txt_whatsapp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

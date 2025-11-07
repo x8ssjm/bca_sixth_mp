@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    tools:context=".package1.AddUserActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSaveUser"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:onClick="OnButtonClick"
+        android:text="Save User" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:onClick="OnButtonClick"
+        android:text="Cancel" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer glowing ring -->
+    <path
+        android:pathData="M54,20 A34,34 0 1,1 53.99,20Z"
+        android:strokeWidth="4"
+        android:strokeColor="#FFD700"
+        android:fillColor="#00000000" />
+
+    <!-- Inner golden gradient core -->
+    <path android:pathData="M54,40 A14,14 0 1,1 53.99,40Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="40"
+                android:endX="68"
+                android:endY="68"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFD700"/>
+                <item android:offset="1.0" android:color="#FFF57F17"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Circuit lines (tech look) -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#FFD700"
+        android:fillColor="#00000000"
+        android:pathData="
+            M54,20 L54,10
+            M74,34 L84,24
+            M34,34 L24,24
+            M74,74 L84,84
+            M34,74 L24,84" />
+
+    <!-- Circuit connection dots -->
+    <path android:pathData="M54,8 A2,2 0 1,1 53.99,8Z" android:fillColor="#FFD700"/>
+    <path android:pathData="M84,22 A2,2 0 1,1 83.99,22Z" android:fillColor="#FFD700"/>
+    <path android:pathData="M24,22 A2,2 0 1,1 23.99,22Z" android:fillColor="#FFD700"/>
+    <path android:pathData="M84,86 A2,2 0 1,1 83.99,86Z" android:fillColor="#FFD700"/>
+    <path android:pathData="M24,86 A2,2 0 1,1 23.99,86Z" android:fillColor="#FFD700"/>
+</vector>

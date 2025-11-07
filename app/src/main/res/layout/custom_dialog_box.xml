@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a custom dialog box"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is a prompt for the user"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/realmadrid"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:backgroundTint="#808080"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:backgroundTint="#ADFF2F"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

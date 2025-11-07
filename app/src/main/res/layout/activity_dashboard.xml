@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center_horizontal"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Your Dashboard!"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="200sp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_SetupProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DDDDDD"
+        android:onClick="SetupProfileCLick"
+        android:text="Setup Profile"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="100dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_Skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:onClick="SkipAndContinueClick"
+        android:text="Skip and Continue"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="80dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_context_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_red_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Open Context Menu"
+        android:textAllCaps="false"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btn_popup_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_red_btn"
+        android:layout_marginBottom="30dp"
+        android:text="Open Popup Menu"
+        android:textAllCaps="false"
+        android:onClick="ShowPopupMenu"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

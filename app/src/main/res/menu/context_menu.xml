@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cmenu_one"
+        android:title="Context Menu 1"
+        />
+    <item
+        android:id="@+id/cmenu_two"
+        android:title="Context Menu 2"
+        />
+    <item
+        android:id="@+id/cmenu_three"
+        android:title="Context Menu 3"
+        >
+        <menu>
+            <item
+                android:id="@+id/cmenu_threea"
+                android:title="Context Menu 3a" />
+            <item
+                android:id="@+id/cmenu_threeb"
+                android:title="Context Menu 3b" />
+            <item
+                android:id="@+id/cmenu_threec"
+                android:title="Context Menu 3c" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/cmenu_four"
+        android:title="Context Menu 4"
+        />
+</menu>

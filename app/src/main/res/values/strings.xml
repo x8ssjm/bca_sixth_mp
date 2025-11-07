@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AndroidBCA</string>
+    <string name="email_hint">Enter your email address</string>
+    <string name="txt_welcome">Welcome Back</string>
+    <string name="txt_missed">You\'ve been missed</string>
+    <string name="password_hint">Enter your Password</string>
+    <string name="txt_forgot_psw">Forgot Password?</string>
+    <string name="txt_emailhint">emailhint@email.com</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_password">Password</string>
+    <string name="whatsapp_us_underlined"><u>WhatsApp Us</u></string>
+
+<!--    String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};-->
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>
