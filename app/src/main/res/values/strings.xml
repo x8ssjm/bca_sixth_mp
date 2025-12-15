@@ -10,7 +10,7 @@
     <string name="tv_password">Password</string>
     <string name="whatsapp_us_underlined"><u>WhatsApp Us</u></string>
 
-<!--    String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};-->
+    <!--    String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};-->
     <string-array name="days">
         <item>Sunday</item>
         <item>Monday</item>
