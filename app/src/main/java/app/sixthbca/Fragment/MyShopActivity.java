@@ -107,6 +107,9 @@ public class MyShopActivity extends AppCompatActivity {
         FragmentTransaction transaction = manager.beginTransaction();
 
         transaction.replace(R.id.frame_layout, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
+
+        Toast.makeText(MyShopActivity.this, "Fragment switched", Toast.LENGTH_SHORT).show();
     }
 }

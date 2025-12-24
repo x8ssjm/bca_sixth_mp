@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SixthBCA">
         <activity
-            android:name=".Fragment.MyShopActivity"
+            android:name=".hospitalDB.HospitalMainActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".db.MyStorageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,17 +30,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Fragment.MyShopActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".gridview.DemoRecycleActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".gridview.GridViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MyCustomizedListActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".classui2.BankProfileActivity"
             android:exported="false" />
